@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    background-color: white;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+textarea {
+    height: 90vh;
+    width: 80%;
+}
+
+.main {
+    padding: 10px;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    height: 100vh;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 5px;
+}
+
+form {
+    text-align: left;
+}
+
+input {
+    margin-top: 15px;
+}
+
+textarea {
+    margin-top: 20px;
+    height: 65vh;
+}
+
+.button {
+    display: block;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+label[for="id_title"],[for="id_content"] {
+    display: block;
+    margin-bottom: 0;
+}
+
+input[id="id_title"] {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+textarea[id="id_content"] {
+    margin-top: 0;
+
+}

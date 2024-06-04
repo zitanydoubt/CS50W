@@ -1,0 +1,36 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block nav %}
+    <div>
+        <a href="{% url 'index' %}">Home</a>
+    </div>
+    <div>
+        <a href="{% url 'new' %}">Create New Page</a>
+    </div>
+    <div>
+        <a href="{% url 'edit' entry=title %}">Edit Page</a>
+    </div>
+    <div>
+        <a href="{% url 'random' %}">Random Page</a>
+    </div>
+{% endblock %}
+
+{% block title %}
+{% if entry %}
+    {{ title }}
+{% else %}
+    Error
+{% endif %}
+{% endblock %}
+
+
+{% block body %}
+{% if entry %}
+        {{ entry |safe }}
+{% else %}
+    <h1>Error</h1>
+    <div>
+        This entry does not exist.
+    </div>
+{% endif %}
+{% endblock %}
